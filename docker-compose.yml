@@ -1,0 +1,17 @@
+version: '3'
+
+networks:
+  shoesmart-dev-network:
+
+services:
+  dev-svc-authentication-rest:
+    container_name: dev-svc-authentication-rest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    hostname: dev-svc-authentication-rest
+    ports:
+      - "4000:4000"
+    networks:
+      - shoesmart-dev-network

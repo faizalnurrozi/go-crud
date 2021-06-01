@@ -1,0 +1,4 @@
+development:
+  dialect: postgres
+  datasource: postgres://postgres:shm888@localhost:5432/svc_authentication?sslmode=disable&TimeZone=UTC
+  dir: migrations
